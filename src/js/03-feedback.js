@@ -22,7 +22,7 @@ function loadFeedback() {
 function getFeedback() {
   const email = formFeedback.elements['email'].value;
   const message = formFeedback.elements['message'].value;
-  feedback = { email: email, message: message };
+  const feedback = { email: email, message: message };
   return feedback;
 }
 
