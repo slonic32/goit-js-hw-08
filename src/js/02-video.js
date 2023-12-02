@@ -11,12 +11,8 @@ function saveVideoPosition(event) {
 }
 
 function loadLoadVideoPosition(event) {
-  try {
-    const videoPosotion = localStorage.getItem('videoplayer-current-time');
-    if (videoPosotion !== null) {
-      playerVimeo.setCurrentTime(videoPosotion);
-    }
-  } catch (error) {
-    console.log(error);
+  const videoPosotion = localStorage.getItem('videoplayer-current-time');
+  if (videoPosotion !== null) {
+    playerVimeo.setCurrentTime(videoPosotion);
   }
 }
