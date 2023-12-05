@@ -36,8 +36,11 @@ function saveFeedback() {
 
 function submitFeedback(event) {
   event.preventDefault();
-  console.log(getFeedback());
-  formFeedback.elements['email'].value = '';
-  formFeedback.elements['message'].value = '';
-  localStorage.clear();
+  const feedback = getFeedback();
+  if (feedback.email !== '' && feedback.message !== '') {
+    console.log(feedback);
+    formFeedback.elements['email'].value = '';
+    formFeedback.elements['message'].value = '';
+    localStorage.clear();
+  }
 }
