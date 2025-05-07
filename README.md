@@ -1,2 +1,3 @@
-# goit-js-hw-06
-JS Nomework 10
+# goit-js-hw-08
+
+JS Homework 14
